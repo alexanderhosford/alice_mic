@@ -82,7 +82,7 @@ module connectorClasp() {
 //}
 
 module pcb_housing() {
-	import("STL/pcb_housing.stl");
+	import("STL/pcb_housing_3.stl");
 }
 
 //////////////////////////////////////////
