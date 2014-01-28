@@ -23,36 +23,36 @@ module tube() {
 
 module capsule() {
 	color("gold")
-	import("tsb160aElement.stl");
+	import("STL/tsb160aElement.stl");
 }
 
 module capsuleCover() {
 	color("silver")
-	import("capsuleCover.stl");
+	import("STL/capsuleCover.stl");
 }
 
 module capsuleCoverLargeGrille() {
 	color("silver")
-	import("capsuleCoverLargeGrille.stl");
+	import("STL/capsuleCoverLargeGrille.stl");
 }
 
 module fet() {
-	import("TO72fromDAE.stl");
+	import("STL/TO72fromDAE.stl");
 }
 
 module 1g() {
-	import("0207resistor.stl");
+	import("STL/0207resistor.stl");
 }
 
 module xlrPins() {
-	import("xlrPins.stl");
+	import("STL/xlrPins.stl");
 }
 
 module neutrikConnector() {
 	rotate([90,0,0])
 	color("dark gray")
 	difference() {
-		import("xlrConnector.stl");
+		import("STL/xlrConnector.stl");
 //		translate([0,0,-70])
 //		difference() {
 //			cylinder(r=25/2,h=10,center=true);
@@ -65,12 +65,12 @@ module neutrikConnector() {
 
 module capsuleClasp() {
 	color("white")
-	import("capsuleBoardClasp.stl");
+	import("STL/capsuleBoardClasp.stl");
 }
 
 module connectorClasp() {
 	color("white")
-	import("xlrBoardClasp.stl");
+	import("STL/xlrBoardClasp.stl");
 }
 
 //module rubberRing() {
@@ -82,7 +82,7 @@ module connectorClasp() {
 //}
 
 module pcb_housing() {
-	import("pcb_housing.stl");
+	import("STL/pcb_housing.stl");
 }
 
 //////////////////////////////////////////
