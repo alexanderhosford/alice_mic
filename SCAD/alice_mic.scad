@@ -53,11 +53,15 @@ module pcb_housing() {
 
 
 //translate([0,0,-13.1])
-%tube();
+//%tube();
 
 translate([0,0,32.5])
 rotate([0,180,0])
 capsule();
+
+translate([0,0,35.5])
+rotate([0,180,0])
+element();
 
 //translate([0,-20,0])
 //scale(10)
@@ -100,5 +104,5 @@ rubber_mount_2();
 
 rotate([90,0,90])
 translate([0,1,0])
-color("dark blue")
+color("darkblue",0.8)
 pcb_housing();
