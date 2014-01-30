@@ -1,15 +1,12 @@
 module mesh() {
-
-	import("mesh.stl");
-}
-
-module meshgrid() {
+	scale(0.08)
+	color("gold")
 	for (x=[0:8]) {
 		for (y=[0:4]) {
 			translate([x*100,y*200,0])
-			mesh();
+			import("STL/mesh.stl");
 		}
 	}
 }
 
-meshgrid();
+mesh();
