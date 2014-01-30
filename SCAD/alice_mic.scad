@@ -18,7 +18,7 @@ module capsuleCoverLargeGrille() {
 }
 
 module fet() {
-	import("STL/TO72fromDAE.stl");
+	import("STL/TO72.stl");
 }
 
 module 1g() {
