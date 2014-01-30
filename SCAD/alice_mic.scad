@@ -30,9 +30,8 @@ module xlrPins() {
 }
 
 module neutrikConnector() {
-	rotate([90,0,0])
-	color("dark gray")
-	import("STL/xlrConnector.stl");
+	color("darkgray")
+	import("STL/neutrik_connector_trimmed.stl");
 }
 
 module capsuleClasp() {
@@ -51,15 +50,10 @@ module pcb_housing() {
 
 //////////////////////////////////////////
 
-
 //translate([0,0,-13.1])
-//%tube();
+%tube();
 
-translate([0,0,32.5])
-rotate([0,180,0])
-capsule();
-
-translate([0,0,35.5])
+translate([0,0,34.01])
 rotate([0,180,0])
 element();
 
@@ -67,42 +61,22 @@ element();
 //scale(10)
 //fet();
 
-//translate([0,0,-16])
-//rotate([0,90,0])
-//board3();
-
-//translate([0,0,-43.5])
-//rotate([0,0,-90])
-//neutrikConnector();
-
-//translate([0,0,31.5])
-//rotate([0,180,0])
-//capsuleClasp();
-
-//translate([0,0,-48.5])
-//rotate([0,0,0])
-//connectorClasp();
-
-//scale(0.01)
-//meshgrid();
+translate([0,0,-43.51])
+rotate([0,0,-90])
+neutrikConnector();
 
 //translate([0,0,28])
-////rubberRing();
 //rubber_mount();
 
-translate([0,0,26])
-//rubberRing();
+translate([0,0,25])
 rubber_mount_2();
 
-//translate([0,0,52])
-//translate([0,0,83])
-//%capsuleCover();
-
 //translate([0,0,62])
-////translate([0,0,83])
 //capsuleCoverLargeGrille();
 
 rotate([90,0,90])
 translate([0,1,0])
 color("darkblue",0.8)
 pcb_housing();
+
+mesh();
