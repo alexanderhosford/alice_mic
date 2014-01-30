@@ -1,18 +1,11 @@
 use <tube.scad>
-use <boardWithCaps.scad>
 use <mesh.scad>
 use <capsule_cover.scad>
 use <rubber_mount.scad>
-
-use <ruler.scad>
+use <tsb160aElement.scad>
 
 $fa=0.01;
 $fs=0.05;
-
-module capsule() {
-	color("gold")
-	import("STL/tsb160aElement.stl");
-}
 
 module capsuleCover() {
 	color("silver")
