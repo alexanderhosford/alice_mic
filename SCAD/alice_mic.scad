@@ -3,6 +3,7 @@ use <mesh.scad>
 use <capsule_cover.scad>
 use <rubber_mount.scad>
 use <tsb160aElement.scad>
+use <end_cap.scad>
 
 $fa=0.01;
 $fs=0.05;
@@ -51,7 +52,7 @@ module pcb_housing() {
 //////////////////////////////////////////
 
 //translate([0,0,-13.1])
-%tube();
+tube();
 
 translate([0,0,34.01])
 rotate([0,180,0])
@@ -79,4 +80,7 @@ translate([0,1,0])
 color("darkblue",0.8)
 pcb_housing();
 
-mesh();
+translate([0,0,40.5])
+end_cap();
+
+//mesh();
