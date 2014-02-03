@@ -76,9 +76,11 @@ neutrikConnector();
 //color("darkblue",0.8)
 //pcb_housing();
 
+translate([0,0,25])
+1g();
+
 //translate([0,0,40.1])
 //end_cap();
 
 //mesh();
 
-1g();
