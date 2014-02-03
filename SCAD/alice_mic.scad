@@ -20,6 +20,7 @@ module capsuleCoverLargeGrille() {
 }
 
 module 1g() {
+	color("DodgerBlue")
 	import("STL/1g.stl");
 }
 
