@@ -71,10 +71,10 @@ neutrikConnector();
 //translate([0,0,62])
 //capsuleCoverLargeGrille();
 
-//rotate([90,0,90])
-//translate([0,1,0])
-//color("darkblue",0.8)
-//pcb_housing();
+rotate([90,0,90])
+translate([0,1,0])
+color("darkblue",0.8)
+pcb_housing();
 
 translate([0,0,25])
 1g();
