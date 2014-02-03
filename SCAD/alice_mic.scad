@@ -4,7 +4,6 @@ use <capsule_cover.scad>
 use <rubber_mount.scad>
 use <tsb160aElement.scad>
 use <end_cap.scad>
-use <>
 
 $fa=0.01;
 $fs=0.4;
