@@ -51,4 +51,6 @@ module end_cap() {
 	end_mesh();
 }
 
-end_cap();
+//end_cap();
+
+cap();
