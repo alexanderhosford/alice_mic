@@ -15,6 +15,9 @@ module capsule_cover() {
 		cylinder(r=(16.5/2)-1.92,h=2,center=true);
 	
 		front_ports();
+
+		translate([0,0,3.1])
+		rounding();
 	}
 }
 
@@ -113,3 +116,18 @@ module element() {
 }
 
 element();
+
+module rounding() {
+	rotate_extrude() {
+		translate([7.4,0,2.7])
+		difference() {
+			rotate([90,0,0]) 
+			square(1);
+			rotate([90,0,0]) 
+			circle(1);
+		}
+	}
+}
+
+
+
