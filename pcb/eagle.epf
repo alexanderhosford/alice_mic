@@ -386,6 +386,7 @@ ArcDirection=0
 AddLevel=2
 PadsSameType=0
 Layer=91
+Views=" 1: 16.9604 42.0472 160.84 109.76"
 Sheet=1
 
 [Win_2]
@@ -396,7 +397,7 @@ Number=0
 
 [Win_3]
 Type="Board Editor"
-Loc="360 248 1699 1051"
+Loc="100 96 1439 899"
 State=1
 Number=1
 File="aliceMicFinalThruHole_circuit_test.brd"
