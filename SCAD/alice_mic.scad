@@ -46,11 +46,15 @@ module pcb_housing() {
 	import("STL/pcb_housing_3.stl");
 }
 
+module fet() {
+	import("STL/to72_no_legs.stl");
+}
+
 //////////////////////////////////////////
 
-//translate([0,0,-13.1])
-//color("silver")
-//tube();
+translate([0,0,0])
+color("silver")
+tube();
 
 translate([0,0,34.01])
 rotate([0,180,0])
@@ -65,8 +69,8 @@ neutrikConnector();
 //translate([0,0,28])
 //rubber_mount();
 
-//translate([0,0,25])
-//rubber_mount_2();
+translate([0,0,25])
+rubber_mount_2();
 
 //translate([0,0,62])
 //capsuleCoverLargeGrille();
@@ -76,11 +80,16 @@ translate([0,1,0])
 color("darkblue",0.8)
 pcb_housing();
 
-translate([0,0,25])
+translate([3,0,24])
+rotate([0,90,0])
 1g();
 
-//translate([0,0,40.1])
-//end_cap();
+translate([-2,0,25])
+rotate([0,180,0])
+fet();
+
+translate([0,0,40.1])
+end_cap();
 
 //mesh();
 
